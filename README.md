@@ -26,6 +26,16 @@ A comparative study and implementation of **Hybrid Neural Architectures** for st
 * **Data Processing:** Pandas, NumPy, Scikit-learn
 * **Data Source:** Kaggle Tweet Dataset & Yahoo Finance API (`yfinance`)
 
+## 📊 Performance Metrics
+The models were evaluated on the held-out test set using Accuracy, Precision, Recall, and F1-Score. The **Hybrid RoBERTa-GRU** demonstrated superior performance across all metrics, indicating better handling of sequential context in financial tweets.
+
+| Model | Accuracy | Precision | Recall | F1 Score |
+| :--- | :--- | :--- | :--- | :--- |
+| **Hybrid RoBERTa-GRU (Proposed)** | **0.608** | **0.596** | **0.589** | **0.595** |
+| Modified RoBERTa | 0.585 | 0.569 | 0.573 | 0.577 |
+| RoBERTa Base | 0.573 | 0.567 | 0.576 | 0.566 |
+| BERT Base | 0.561 | 0.568 | 0.555 | 0.547 |
+
 ## 📂 Project Structure
 ```bash
 ├── stock_classifier_tweet.py     # Main model training & evaluation loop (PyTorch)
